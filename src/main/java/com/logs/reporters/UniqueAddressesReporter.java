@@ -1,4 +1,6 @@
-package com.logs;
+package com.logs.reporters;
+
+import com.logs.Storage;
 
 public class UniqueAddressesReporter {
     private Storage storage;

@@ -1,5 +1,6 @@
-package com.logs;
+package com.logs.reporters;
 
+import com.logs.Storage;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
