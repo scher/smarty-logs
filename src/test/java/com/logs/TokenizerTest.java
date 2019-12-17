@@ -26,7 +26,6 @@ class TokenizerTest {
     @Test
     void parseNotValidString() {
         String invalidLogEntry = "177.71.128.21 - - [10/Jul/2018:22:21:T /intranet-analytics/ HT/1.1\" 200 3574";
-
         Tokenizer tokenizer = new Tokenizer();
         Entry result = tokenizer.parse(invalidLogEntry);
         Assertions.assertNull(result);
