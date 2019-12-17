@@ -10,7 +10,7 @@ import java.util.List;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
-class TopMostAddressesTest {
+class TopMostAddressesReporterTest {
 
     @Test
     void report() {
@@ -23,7 +23,7 @@ class TopMostAddressesTest {
 
         when(storageMock.getIpStorage()).thenReturn(ipMap);
 
-        TopMostAddresses classToTest = new TopMostAddresses(2, storageMock);
+        TopMostAddressesReporter classToTest = new TopMostAddressesReporter(2, storageMock);
         List<String> report = classToTest.report();
         Assertions.assertEquals(2, report.size());
         Assertions.assertTrue(report.contains("ip1"));
@@ -41,7 +41,7 @@ class TopMostAddressesTest {
 
         when(storageMock.getIpStorage()).thenReturn(ipMap);
 
-        TopMostAddresses classToTest = new TopMostAddresses(10, storageMock);
+        TopMostAddressesReporter classToTest = new TopMostAddressesReporter(10, storageMock);
         List<String> report = classToTest.report();
         Assertions.assertEquals(4, report.size());
         Assertions.assertTrue(report.contains("ip1"));
@@ -57,7 +57,7 @@ class TopMostAddressesTest {
 
         when(storageMock.getIpStorage()).thenReturn(ipMap);
 
-        TopMostAddresses classToTest = new TopMostAddresses(10, storageMock);
+        TopMostAddressesReporter classToTest = new TopMostAddressesReporter(10, storageMock);
         List<String> report = classToTest.report();
         Assertions.assertEquals(0, report.size());
     }

@@ -5,7 +5,7 @@ import com.logs.Storage;
 import java.util.List;
 
 public class TopMostUrlReporter extends TopMostReporter {
-    protected TopMostUrlReporter(int number, Storage storage) {
+    public TopMostUrlReporter(int number, Storage storage) {
         super(number, storage);
     }
 

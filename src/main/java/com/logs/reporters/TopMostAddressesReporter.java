@@ -4,9 +4,9 @@ import com.logs.Storage;
 
 import java.util.List;
 
-public class TopMostAddresses extends TopMostReporter {
+public class TopMostAddressesReporter extends TopMostReporter {
 
-    public TopMostAddresses(int number, Storage storage) {
+    public TopMostAddressesReporter(int number, Storage storage) {
         super(number, storage);
     }
 
